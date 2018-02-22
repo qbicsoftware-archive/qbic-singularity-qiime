@@ -11,7 +11,8 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p /usr/bin/miniconda
 export PATH="/usr/bin/miniconda/bin:$PATH"
 #install conda and qiime1
-conda create -n qiime1 python=2.7 qiime matplotlib=1.4.3 mock nose -c bioconda
+conda config --add channels bioconda
+conda create -n qiime1 python=2.7 qiime matplotlib=1.4.3 mock nose
 
 #The actual tool installation should be done in the Singularity file itself to make the entire thing portable! 
 
