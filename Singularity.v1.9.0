@@ -10,7 +10,7 @@ build.sh
 
 %environment
 #Set your toolname here and the appropriate version to have this in the metadata of your container
-    QIIME=v1.0
+    QIIME=v1.9.0
     PATH="/usr/bin/miniconda/bin:/usr/bin/miniconda/envs/qiime1/bin:$PATH"
 
 %labels
