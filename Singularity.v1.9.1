@@ -1,17 +1,9 @@
 Bootstrap:docker
-From:ubuntu:latest
-
-%post
-/bin/sh build.sh
-
-%files
-#Installation of tool
-build.sh
+From:biocontainers/qiime:1.9.1--np112py27_1
+Registry: quay.io
 
 %environment
 #Set your toolname here and the appropriate version to have this in the metadata of your container
-    QIIME=v1.9.0
-    PATH="/usr/bin/miniconda/bin:/usr/bin/miniconda/envs/qiime1/bin:$PATH"
-
+    QIIME=1.9.1
 %labels
 Maintainer	alexander.peltzer@uni-tuebingen.de
